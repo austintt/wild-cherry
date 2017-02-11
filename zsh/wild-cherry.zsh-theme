@@ -30,10 +30,10 @@ if [ ! -n "${WILDCHERRY_TIME_SHOW+1}" ]; then
   WILDCHERRY_TIME_SHOW=true
 fi
 if [ ! -n "${WILDCHERRY_TIME_BG+1}" ]; then
-  WILDCHERRY_TIME_BG=magenta
+  WILDCHERRY_TIME_BG=yellow
 fi
 if [ ! -n "${WILDCHERRY_TIME_FG+1}" ]; then
-  WILDCHERRY_TIME_FG=cyan
+  WILDCHERRY_TIME_FG=blue
 fi
 
 # VIRTUALENV
@@ -103,7 +103,7 @@ if [ ! -n "${WILDCHERRY_GIT_BG+1}" ]; then
   WILDCHERRY_GIT_BG=white
 fi
 if [ ! -n "${WILDCHERRY_GIT_FG+1}" ]; then
-  WILDCHERRY_GIT_FG=magenta
+  WILDCHERRY_GIT_FG=black
 fi
 if [ ! -n "${WILDCHERRY_GIT_EXTENDED+1}" ]; then
   WILDCHERRY_GIT_EXTENDED=true
@@ -147,7 +147,7 @@ else
   ZSH_THEME_GIT_PROMPT_ADDED=$WILDCHERRY_GIT_ADDED
 fi
 if [ ! -n "${WILDCHERRY_GIT_MODIFIED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_MODIFIED=" 🍁"
+  ZSH_THEME_GIT_PROMPT_MODIFIED=" 🌊"
 else
   ZSH_THEME_GIT_PROMPT_MODIFIED=$WILDCHERRY_GIT_MODIFIED
 fi
@@ -354,7 +354,7 @@ prompt_time() {
     return
   fi
 
-  prompt_segment $WILDCHERRY_TIME_BG $WILDCHERRY_TIME_FG '🔮  %D{%H:%M:%S} '
+  prompt_segment $WILDCHERRY_TIME_BG $WILDCHERRY_TIME_FG '💎  %D{%H:%M:%S} '
 }
 
 # Status:
