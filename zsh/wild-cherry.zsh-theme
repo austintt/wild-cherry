@@ -137,17 +137,17 @@ else
   ZSH_THEME_GIT_PROMPT_DIRTY=$WILDCHERRY_GIT_DIRTY
 fi
 if [ ! -n "${WILDCHERRY_GIT_CLEAN+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_CLEAN=" 🌷"
+  ZSH_THEME_GIT_PROMPT_CLEAN=" 🛀"
 else
   ZSH_THEME_GIT_PROMPT_CLEAN=$WILDCHERRY_GIT_CLEAN
 fi
 if [ ! -n "${WILDCHERRY_GIT_ADDED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_ADDED=" 💅"
+  ZSH_THEME_GIT_PROMPT_ADDED=" 🍻"
 else
   ZSH_THEME_GIT_PROMPT_ADDED=$WILDCHERRY_GIT_ADDED
 fi
 if [ ! -n "${WILDCHERRY_GIT_MODIFIED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_MODIFIED=" 🍄"
+  ZSH_THEME_GIT_PROMPT_MODIFIED=" 🍁"
 else
   ZSH_THEME_GIT_PROMPT_MODIFIED=$WILDCHERRY_GIT_MODIFIED
 fi
@@ -157,7 +157,7 @@ else
   ZSH_THEME_GIT_PROMPT_DELETED=$WILDCHERRY_GIT_DELETED
 fi
 if [ ! -n "${WILDCHERRY_GIT_UNTRACKED+1}" ]; then
-  ZSH_THEME_GIT_PROMPT_UNTRACKED=" 🎀"
+  ZSH_THEME_GIT_PROMPT_UNTRACKED=" 🍺"
 else
   ZSH_THEME_GIT_PROMPT_UNTRACKED=$WILDCHERRY_GIT_UNTRACKED
 fi
@@ -301,7 +301,7 @@ prompt_dir() {
     return
   fi
 
-  local dir='👸  '
+  local dir='😬  '
   local _context="$(context)"
   [[ $WILDCHERRY_DIR_CONTEXT_SHOW == true && -n "$_context" ]] && dir="${dir}${_context}:"
   [[ $WILDCHERRY_DIR_EXTENDED == true ]] && dir="${dir}%4(c:...:)%3c" || dir="${dir}%1~"
